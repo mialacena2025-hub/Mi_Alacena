@@ -27,8 +27,8 @@
   <!-- Menú desplegable móvil -->
   <div id="mobile-menu" class="hidden md:hidden bg-amber-500 flex flex-col text-center space-y-2 py-3">
     <a href="#" class="hover:bg-amber-600 py-2">Inicio</a>
-    <a href="#" class="hover:bg-amber-600 py-2">Productos</a>
-    <a href="#" class="hover:bg-amber-600 py-2">Contacto</a>
+    <a href="#productos" class="hover:bg-amber-600 py-2">Productos</a>
+    <a href="#contacto" class="hover:bg-amber-600 py-2">Contacto</a>
   </div>
 </header>
 
@@ -42,10 +42,10 @@
   class="relative bg-center bg-cover bg-no-repeat rounded-2xl overflow-hidden text-white shadow-lg fade-in opacity-0 transition-opacity duration-700 ease-out min-h-[500px]"
   style="background-image: url('../public/imagenes/hero.jpg');"
 >
-  <div class="absolute inset-0 bg-gray-900 bg-opacity-0"></div>
+  <div class="absolute inset-0 bg-gray-900 bg-opacity-40"></div>
   <div class="relative z-10 text-center py-24 px-6">
     <h2 class="text-4xl font-bold mb-4">
-      Bienvenido a <span class="text-amber-300">"Mi Alacena" </span>
+      Bienvenido a <span class="text-amber-300">"Mi Alacena"</span>
     </h2>
     <p class="text-lg mb-6">
       Productos frescos, locales y con sabor a hogar 🥚🥖🥛
@@ -70,47 +70,74 @@
 </section>
 
 <!-- Productos destacados -->
- <section id="productos" class="mt-20">
-   <h2 class="text-3xl font-bold text-amber-600 mb-8 text-center fade-in bg-clip-text text-transparent bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 gradient-animate">Productos Destacados 🛒</h2> 
-   <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3"> 
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition duration-500 transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl fade-in hover-glow"> 
-      <img src="/imagenes/huevos/HUEVOS_EXTRA_BLANCOS_30" alt="Huevos Don Vicho" class="w-full h-48 object-cover">
+<section id="productos" class="mt-20">
+  <h2 class="text-3xl font-bold text-amber-600 mb-8 text-center fade-in opacity-0 bg-clip-text text-transparent bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 gradient-animate">Productos Destacados 🛒</h2> 
+  <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3"> 
     
-      <div class="p-4 flex-1 flex flex-col justify-between"> 
-        <div><h3 class="text-lg font-semibold mb-2">Huevos blancos extra (30 unidades) </h3><p class="text-gray-700 mb-4">$6.500</p></div>
+    <!-- Producto 1 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition duration-500 transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl fade-in opacity-0 hover-glow"> 
+      <img src="../public/imagenes/huevos/HUEVOS_EXTRA_BLANCOS_30.jpg" alt="Huevos Don Vicho">
+      <div class="p-4 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Huevos blancos extra (30 unidades)</h3>
+          <p class="text-gray-700 mb-4">$6.500</p>
+        </div>
         <button class="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 gradient-animate text-white py-2 rounded-lg font-semibold hover-glow transition">Agregar al carrito</button>
       </div>
     </div>
-    <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition duration-500 transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl fade-in hover-glow">
-     
-     <img src="/imagenes/cafe/LUCAFFE_CLASSIC_1Kg" alt="Lucaffe" class="w-full h-48 object-cover">
+
+    <!-- Producto 2 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition duration-500 transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl fade-in opacity-0 hover-glow">
+      <img src="../public/imagenes/cafe/LUCAFFE_CLASSIC_1Kg.jpg" alt="Café Lucaffé">
       <div class="p-4 flex-1 flex flex-col justify-between">
-        <div><h3 class="text-lg font-semibold mb-2">Un cafe sin igual </h3><p class="text-gray-700 mb-4">$16.000</p></div> 
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Un café sin igual</h3>
+          <p class="text-gray-700 mb-4">$16.000</p>
+        </div> 
         <button class="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 gradient-animate text-white py-2 rounded-lg font-semibold hover-glow transition">Agregar al carrito</button>
       </div>
-     </div>
-     <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition duration-500 transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl fade-in hover-glow"> 
-      
-       <img src="/imagenes/aceites/LACEITE_EXTRA_OLIVA_SALVATORE_500ml" alt="Salvattore" class="w-full h-48 object-cover"> 
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col transition duration-500 transform hover:-translate-y-2 hover:scale-105 hover:shadow-2xl fade-in opacity-0 hover-glow"> 
+      <img src="../public/imagenes/aceites/LACEITE_EXTRA_OLIVA_SALVATORE_500ml.jpg" alt="Aceite Salvatore">
       <div class="p-4 flex-1 flex flex-col justify-between"> 
-        <div><h3 class="text-lg font-semibold mb-2">Delicada acidez </h3><p class="text-gray-700 mb-4">$3.900</p></div> 
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Delicada acidez</h3>
+          <p class="text-gray-700 mb-4">$3.900</p>
+        </div> 
         <button class="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 gradient-animate text-white py-2 rounded-lg font-semibold hover-glow transition">Agregar al carrito</button> 
       </div>
-     </div>
     </div>
-   </section>
-
-<!-- Testimonios --> 
- <section class="mt-20 bg-amber-50 rounded-2xl shadow p-8"> 
-  <h2 class="text-3xl font-bold text-amber-600 mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-amber-600 fade-in">Lo que dicen nuestros clientes 💬</h2> 
-  <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3"> 
-    <div class="bg-white p-6 rounded-xl shadow-md fade-in"><p class="text-gray-700 mb-4">“Los productos son frescos y deliciosos. ¡Siempre vuelvo por más!”</p><div class="flex items-center"><img src="https://via.placeholder.com/50" alt="Cliente 1" class="rounded-full mr-3"><span class="font-semibold">Ana P.</span></div></div> 
-    <div class="bg-white p-6 rounded-xl shadow-md fade-in"><p class="text-gray-700 mb-4">“Excelente atención y entrega rápida. Muy recomendable.”</p><div class="flex items-center"><img src="https://via.placeholder.com/50" alt="Cliente 2" class="rounded-full mr-3"><span class="font-semibold">Carlos R.</span></div></div> 
-    <div class="bg-white p-6 rounded-xl shadow-md fade-in"><p class="text-gray-700 mb-4">“Mi familia disfruta cada producto. ¡Saben a hogar!”</p><div class="flex items-center"><img src="https://via.placeholder.com/50" alt="Cliente 3" class="rounded-full mr-3"><span class="font-semibold">Lucía M.</span></div></div> 
   </div>
- </section>
+</section>
 
-    <!-- Nuestra Historia -->
+<!-- Testimonios -->
+<section class="mt-20 bg-amber-50 rounded-2xl shadow p-8 fade-in opacity-0"> 
+  <h2 class="text-3xl font-bold text-amber-600 mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-amber-600">Lo que dicen nuestros clientes 💬</h2> 
+  <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3"> 
+    <div class="bg-white p-6 rounded-xl shadow-md fade-in opacity-0">
+      <p class="text-gray-700 mb-4">“Los productos son frescos y deliciosos. ¡Siempre vuelvo por más!”</p>
+      <div class="flex items-center">
+        <img src="https://via.placeholder.com/50" alt="Cliente 1" class="rounded-full mr-3"><span class="font-semibold">Ana P.</span>
+      </div>
+    </div> 
+    <div class="bg-white p-6 rounded-xl shadow-md fade-in opacity-0">
+      <p class="text-gray-700 mb-4">“Excelente atención y entrega rápida. Muy recomendable.”</p>
+      <div class="flex items-center">
+        <img src="https://via.placeholder.com/50" alt="Cliente 2" class="rounded-full mr-3"><span class="font-semibold">Carlos R.</span>
+      </div>
+    </div> 
+    <div class="bg-white p-6 rounded-xl shadow-md fade-in opacity-0">
+      <p class="text-gray-700 mb-4">“Mi familia disfruta cada producto. ¡Saben a hogar!”</p>
+      <div class="flex items-center">
+        <img src="https://via.placeholder.com/50" alt="Cliente 3" class="rounded-full mr-3"><span class="font-semibold">Lucía M.</span>
+      </div>
+    </div> 
+  </div>
+</section>
+
+<!-- Nuestra Historia -->
 <section class="mt-20 bg-white rounded-2xl shadow p-8 fade-in opacity-0 transition-opacity duration-700 ease-out">
   <h2 class="text-3xl font-bold text-amber-600 mb-6">Nuestra historia 🏡</h2>
   <div class="flex flex-col md:flex-row items-center justify-center gap-8">
@@ -153,7 +180,8 @@
   </div>
 </section>
 
-<!-- FAQ --> <section class="mt-20 bg-amber-50 rounded-2xl shadow p-8 fade-in"> 
+<!-- FAQ -->
+<section class="mt-20 bg-amber-50 rounded-2xl shadow p-8 fade-in opacity-0"> 
   <h2 class="text-3xl font-bold text-amber-600 mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-amber-600">Preguntas Frecuentes ❓</h2> 
   <div class="max-w-3xl mx-auto text-left space-y-4"> 
     <button class="faq-btn w-full text-left font-semibold bg-amber-200 p-3 rounded">¿Cómo hago un pedido?</button> 
@@ -166,32 +194,31 @@
 </section>
 
 <!-- Newsletter --> 
-<section class="mt-20 bg-white rounded-2xl shadow p-8 fade-in"> 
+<section class="mt-20 bg-white rounded-2xl shadow p-8 fade-in opacity-0"> 
  <h2 class="text-3xl font-bold text-amber-600 mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-amber-600">Suscríbete a nuestro Newsletter ✉️</h2> 
  <form class="max-w-2xl mx-auto flex flex-col sm:flex-row gap-4"> 
-  <input type="email" placeholder="Tu correo electrónico" class="p-3 rounded-lg border border-gray-300 flex-1 focus:outline-none focus:ring-2 focus:ring-amber-400"> 
+  <input type="email" placeholder="Tu correo electrónico" class="p-3 rounded-lg border border-gray-300 flex-1 focus:outline-none focus:ring-2 focus:ring-amber-400" required> 
   <button type="submit" class="bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover-glow transition">Suscribirme</button> 
 </form> 
 </section>
 
 <!-- Contacto --> 
- <section id="contacto" class="mt-20 bg-amber-50 rounded-2xl shadow p-8 fade-in"> 
+<section id="contacto" class="mt-20 bg-amber-50 rounded-2xl shadow p-8 fade-in opacity-0"> 
   <h2 class="text-3xl font-bold text-amber-600 mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-amber-600">Contacto 📞</h2> 
   <div class="max-w-3xl mx-auto text-gray-700 space-y-4"> 
-    <p>📍 Dirección: San Anotonio de Naltahua, Isla de Maipo, Chile</p> 
-    <p>📧 Correo: mialacena2025@gmail.com </p>
+    <p>📍 Dirección: San Antonio de Naltahua, Isla de Maipo, Chile</p> 
+    <p>📧 Correo: mialacena2025@gmail.com</p>
     <p>📱 WhatsApp: <a href="https://wa.me/56912345678" class="text-amber-600 hover:underline">+56 9 1234 5678</a></p> 
   </div> 
 </section>
 
-<footer class="bg-amber-600">
-  <div class="border-t border-amber-500 mt-6 pt-4 text-center text-amber-100 text-sm">
-    © 2025 Mi Alacena. Todos los derechos reservados.
-  </div>
+<!-- Footer -->
+<footer class="bg-amber-600 py-6 text-center text-amber-100 text-sm">
+  © 2025 Mi Alacena. Todos los derechos reservados.
 </footer>
 
-  <!-- Scripts -->
-  <script>
+<!-- Scripts -->
+<script>
   // Menú móvil
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -235,8 +262,4 @@
 </script>
 
 </body>
-
-</html>    
-
-
-
+</html
